@@ -1,0 +1,111 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+ul li{
+  list-style: none;
+}
+
+.logo{
+  width: 50px;
+  height: 50px;
+  background: #ffe453;
+  box-shadow: 10px 10px 3px rgba(24,37,42,0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.wrapper{
+  display: grid;
+  grid-template-areas:
+  "h h"
+  "m c";
+  grid-template-columns: 2fr 10fr ;
+  grid-template-rows: 100px 1fr;
+  grid-gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+
+
+.header{
+  grid-area: h;
+  background-color: #6d5b5b;
+}
+
+.menubar{
+  grid-area: m;
+  background-color: #4c6c3b;
+}
+
+.content{
+  grid-area: c;
+}
+
+.menubar{
+  text-align: center;
+  padding: 20px;
+}
+
+.list{
+  margin: 0 0 10px 0;
+}
+.link{
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+}
+.link:hover{
+  font-weight: 400;
+}
+
+.fullscreen__image {
+  max-width: 1000px;
+}
+.fullscreen__image img{
+  width: 100%;
+}
+
+.myList{
+  display: flex;
+}
+
+.myList__avatar{
+  max-width: 200px;
+}
+.myList__avatar img{
+  max-width: 100%;
+}
+
+.myList__landing{
+  margin: 0 0 0 20px;
+}
+
+.landing__title{
+  margin: 0 0 10px 0;
+}
+
+.landing__HB{
+  margin: 0 0 10px 0; 
+}
+
+.landing__City{
+  margin: 0 0 10px 0;
+}
+
+.landing__Education{
+  margin: 0 0 10px 0;
+}
+
+.landing__WebSite{
+  margin: 0 0 10px 0;
+}
