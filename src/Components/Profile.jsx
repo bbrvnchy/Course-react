@@ -1,9 +1,11 @@
+import classes from'./Profile.module.css'
+
 const Profile =()=>{
     return(
-    <main className='content'>
+    <main className={classes.content}>
         <section className='myList'>
             <div className='myList__avatar'>
-                <img src='https://papik.pro/uploads/posts/2021-09/1631762389_14-papik-pro-p-prikolnie-avatarki-risunki-14.jpg' alt=''></img>
+                {/* <img src='https://papik.pro/uploads/posts/2021-09/1631762389_14-papik-pro-p-prikolnie-avatarki-risunki-14.jpg' alt=''></img> */}
             </div>
             <div className='myList__landing landing'>
                 <h2 className='landing__title'>Vladislav Bobrovnichiy</h2>

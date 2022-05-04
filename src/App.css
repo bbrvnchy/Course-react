@@ -25,8 +25,8 @@ ul li{
 .wrapper{
   display: grid;
   grid-template-areas:
-  "h h"
-  "m c";
+  "header header"
+  "menubar profile";
   grid-template-columns: 2fr 10fr ;
   grid-template-rows: 100px 1fr;
   grid-gap: 10px;
@@ -37,20 +37,7 @@ ul li{
 
 
 
-.header{
-  grid-area: h;
-  background-color: #6d5b5b;
-}
-
-.menubar{
-  grid-area: m;
-  background-color: #4c6c3b;
-}
-
-.content{
-  grid-area: c;
-}
-
+/* 
 .menubar{
   text-align: center;
   padding: 20px;
@@ -108,4 +95,4 @@ ul li{
 
 .landing__WebSite{
   margin: 0 0 10px 0;
-}
+} */

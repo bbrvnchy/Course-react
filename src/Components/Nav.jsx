@@ -1,21 +1,23 @@
+import classes from'./Nav.module.css'
+
 const Nav =()=>{
     return(
-    <nav className='menubar'>
-        <ul className={'menu'}>
-            <li className={'list'}>
-                <a href="#" className={'link'}>Profile</a>
+    <nav className={classes.menubar}>
+        <ul className='menu'>
+            <li className='list'>
+                <a href="#" className='link'>Profile</a>
             </li>
-            <li className={'list'}>
-                <a href="#" className={'link'}>Message</a>
+            <li className='list'>
+                <a href="#" className='link'>Message</a>
             </li>
-            <li className={'list'}>
-                <a href="#" className={'link'}>Music</a>
+            <li className='list'>
+                <a href="#" className='link'>Music</a>
             </li>
-            <li className={'list'}>
-                <a href="#" className={'link'}>News</a>
+            <li className='list'>
+                <a href="#" className='link'>News</a>
             </li>
-            <li className={'list'}>
-                <a href="#" className={'link'}>Settings</a>
+            <li className='list'>
+                <a href="#" className='link'>Settings</a>
             </li>
         </ul>
     </nav>
