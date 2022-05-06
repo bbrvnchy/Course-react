@@ -1,3 +1,47 @@
 .content{
     grid-area: profile;
 }
+
+.list{
+    display: flex;
+}
+
+.icon{
+    background: #fff;
+    max-width: 200px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.icon img{
+    width: 100%;
+}
+
+.items{
+    background: #fff;
+    margin: 0 0 0 15px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.title{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+}
+
+.date{
+    margin: 0 0 10px 0;
+}
+
+.city{
+    margin: 0 0 10px 0;
+}
+
+.education{
+    margin: 0 0 10px 0;
+}
+
+.email{
+    margin: 0 0 10px 0;
+}

@@ -3,13 +3,16 @@ import Header from './Components/Header';
 import Nav from './Components/Nav';
 import Profile from './Components/Profile';
 
-
 const App = () => {
     return (
         <div className='wrapper'>
-            <Header/>
-            <Nav/>
-            <Profile/>
+            <div className='container'>
+                <Header/>
+                <div className='style-grid'>
+                <Nav/>
+                <Profile/>
+                </div>
+            </div>
         </div>
     );
 }

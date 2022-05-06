@@ -1,4 +1,11 @@
-.menubar{
-    grid-area: menubar;
-    background-color: #4c6c3b;
+.navbar{
+    grid-area: navbar;
+}
+
+.list{
+    margin: 0 0 10px 0;
+}
+
+.link{
+    margin: 0 0 0 10px;
 }

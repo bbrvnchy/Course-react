@@ -1,4 +1,15 @@
 .header{
-    grid-area: header;
-    background-color: #6d5b5b;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #ffffff;
+}
+
+.logo{
+    transform: translate(27.5%,70%);
+    border-radius: 50%;
+    background: #e1f5c3;
+    font-weight: 700;
 }
