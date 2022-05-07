@@ -1,0 +1,12 @@
+.logo{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: blue;
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+.item{
+    margin: 0 0 10px 0;
+}

@@ -1,3 +1,4 @@
+import MyPosts from './MyPosts/MyPosts';
 import classes from'./Profile.module.css'
 
 const Profile =()=>{
@@ -13,6 +14,7 @@ const Profile =()=>{
                 <div className={classes.city}>City: Minsk</div>
                 <div className={classes.education}>Education: GGPK</div>
                 <div className={classes.email}>Web Site:...@mail.ru</div>
+                <MyPosts/>
             </div>
         </section>
     </main>

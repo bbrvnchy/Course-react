@@ -1,0 +1,17 @@
+.textarea{
+    margin: 0 10px 0 0;
+}
+
+.button{
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+button{
+    border-radius: 5px;
+    line-height: 20px;
+    padding: 0 10px;
+    border: 1px solid blue;
+    color: blue;
+    background: #fff;
+}
