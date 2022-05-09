@@ -8,8 +8,8 @@ const MyPosts =()=>{
             <button type='submit' className={classes.button}>Add post</button>
             <button type='reset' className={classes.button}>Remove</button>
             <div className={classes.posts}>
-                <Post message='Hello world' like='15'/>
-                <Post message='Hi, how are you?' like='20'/>
+                <Post message='Hello world' likesCount='15'/>
+                <Post message='Hi, how are you?' likesCount='20'/>
             </div>
         </div>
     )

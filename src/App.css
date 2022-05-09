@@ -1,24 +1,29 @@
-.wrapper{
+.wrapper {
   position: relative;
   min-height: 100vh;
   display: grid;
 
-  
+
   /* 
   grid-gap: 10px; 
   */
 }
 
-.container{
+.container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.style-grid{
+.style-grid {
   display: grid;
   grid-template-areas:
-  "navbar profile";
-  grid-template-columns: 2fr 10fr ;
+    "navbar content";
+  grid-template-columns: 1fr 5fr;
   padding: 60px 0;
-  gap: 15px ;
+  gap: 15px;
+}
+
+.wrapper-content {
+  grid-area: content;
+  width: 600px;
 }

@@ -1,13 +1,13 @@
 import classes from './Post.module.css'
 
 const Post = (props) => {
-
+    
     return (
         <div className={classes.item}>
             <div className={classes.logo}></div>
             {props.message}
             <div>
-                <span>like:{props.like}</span>
+                <span>like</span> {props.likesCount}
             </div>
         </div>
     )

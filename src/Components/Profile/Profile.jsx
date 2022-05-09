@@ -3,10 +3,11 @@ import classes from'./Profile.module.css'
 
 const Profile =()=>{
     return(
-    <main className={classes.content}>
         <section className={classes.list}>
-            <div className={classes.icon}>
-                <img src='https://papik.pro/uploads/posts/2021-09/1631762389_14-papik-pro-p-prikolnie-avatarki-risunki-14.jpg' alt=''></img>
+            <div className={classes.items}>
+                <div className={classes.icon}>
+                    <img src='https://papik.pro/uploads/posts/2021-09/1631762389_14-papik-pro-p-prikolnie-avatarki-risunki-14.jpg' alt=''></img>
+                </div>
             </div>
             <div className={classes.items}>
                 <h2 className={classes.title}>Vladislav Bobrovnichiy</h2>
@@ -17,7 +18,6 @@ const Profile =()=>{
                 <MyPosts/>
             </div>
         </section>
-    </main>
     )
 }
 export default Profile;
