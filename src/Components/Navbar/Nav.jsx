@@ -1,5 +1,7 @@
 import classes from './Nav.module.css'
-import { NavLink } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
+
+const setActive= ({isActive}) => isActive ? 'active-link' : '';
 
 const Nav = () => {
     return (
@@ -7,7 +9,7 @@ const Nav = () => {
             <ul className='menu'>
                 <li className={classes.list}>
                     <ion-icon name="person-circle-outline"></ion-icon>
-                    <NavLink to="/profile" className={classes.link} activeClassName={classes.active}>My profile</NavLink>
+                    <NavLink to="/profile" className={classes.link}>My profile</NavLink>
                 </li>
                 <li className={classes.list}>
                     <ion-icon name="newspaper-outline"></ion-icon>
