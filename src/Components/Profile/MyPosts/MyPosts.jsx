@@ -1,6 +1,16 @@
 import classes from'./MyPosts.module.css'
 import Post from './Post/Post';
 
+// Массив данных
+let posts= [
+    {message:'Hello world', likesCount:11},
+    {message:'Hi, how are you?', likesCount:12}
+]
+
+// Перебор массива
+let postsElement = posts.map((p) => <Post message={p.message} likesCount={p.likesCount}/>)
+
+
 const MyPosts =()=>{
     return(
         <div>
@@ -8,8 +18,7 @@ const MyPosts =()=>{
             <button type='submit' className={classes.button}>Add post</button>
             <button type='reset' className={classes.button}>Remove</button>
             <div className={classes.posts}>
-                <Post message='Hello world' likesCount='15'/>
-                <Post message='Hi, how are you?' likesCount='20'/>
+                {postsElement}     {/* Вставляем массив  */}
             </div>
         </div>
     )

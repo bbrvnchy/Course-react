@@ -1,9 +1,11 @@
 .message{
     background: #fff;
+    border-radius: 15px;
 }
 
 .message__body{
     display: flex;
+    padding: 15px
 }
 
 .message__profile{
