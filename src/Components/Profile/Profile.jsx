@@ -1,7 +1,7 @@
 import MyPosts from './MyPosts/MyPosts';
 import classes from'./Profile.module.css'
 
-const Profile =()=>{
+const Profile =(props)=>{
     return(
         <section className={classes.list}>
             <div className={classes.items}>
@@ -15,7 +15,7 @@ const Profile =()=>{
                 <div className={classes.city}>City: Minsk</div>
                 <div className={classes.education}>Education: GGPK</div>
                 <div className={classes.email}>Web Site:...@mail.ru</div>
-                <MyPosts/>
+                <MyPosts posts={props.posts}/>
             </div>
         </section>
     )

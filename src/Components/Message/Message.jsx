@@ -18,26 +18,13 @@ const Messages = (props) => {
 }
 
 
-const Message = () => {
-    //Массив диалогов
-    let dialogs = [
-        { name: 'Misha', id: '1' },
-        { name: 'Leo', id: '2' },
-        { name: 'Lena', id: '3' },
-        { name: 'Nastya', id: '4' }
-    ]
-    //Массив сообщений
-    let messages = [
-        { message: 'hello' },
-        { message: 'How are you?' },
-        { message: 'How are you?' },
-    ]
+const Message = (props) => {
 
     //Метод map для диалогов
-    let dialogsElement = dialogs.map((d)=><Dialog name={d.name} id={d.id} />)
+    let dialogsElement = props.dialogs.map((d)=><Dialog name={d.name} id={d.id} />)
 
     //Метод map для сообщений
-    let messagesElement = messages.map((m)=><Messages name={m.message} />)
+    let messagesElement = props.messages.map((m)=><Messages message={m.message} />)
 
     return (
         <section className={classes.message}>

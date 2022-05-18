@@ -1,16 +1,10 @@
 import classes from'./MyPosts.module.css'
 import Post from './Post/Post';
 
-// Массив данных
-let posts= [
-    {message:'Hello world', likesCount:11},
-    {message:'Hi, how are you?', likesCount:12}
-]
-
-const MyPosts =(post)=>{
+const MyPosts =(props)=>{
 
     // Перебор массива
-    let postsElement = posts.map((p) => <Post message={p.message} likesCount={p.likesCount}/>)
+    let postsElement = props.posts.map((p) => <Post message={p.message} likesCount={p.likesCount}/>)
 
 
     return(
