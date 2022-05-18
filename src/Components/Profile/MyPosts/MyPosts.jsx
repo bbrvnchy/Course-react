@@ -7,11 +7,12 @@ let posts= [
     {message:'Hi, how are you?', likesCount:12}
 ]
 
-// Перебор массива
-let postsElement = posts.map((p) => <Post message={p.message} likesCount={p.likesCount}/>)
+const MyPosts =(post)=>{
+
+    // Перебор массива
+    let postsElement = posts.map((p) => <Post message={p.message} likesCount={p.likesCount}/>)
 
 
-const MyPosts =()=>{
     return(
         <div>
             <textarea className={classes.textarea} placeholder='New posts'></textarea>

@@ -20,7 +20,7 @@ const App = () => {
                     <Nav />
                     <main className='wrapper-content'>
                         <Routes>
-                            <Route path='/profile' element={<Profile />} />
+                            <Route path='/profile' element={<Profile posts={}/>} />
                             <Route path='/news' element={<News />} />
                             <Route path='/message' element={<Message />} />
                             <Route path='/friends' element={<Friends />} />
