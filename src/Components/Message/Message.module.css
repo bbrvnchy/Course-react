@@ -12,11 +12,12 @@
     flex: 0 1 70px;
 }
 
-.message__dialogs{
+.dialogs__body{
     flex: 1 1 auto;
     text-align: center;
 }
 
+/*Иконки*/
 .items{
     display: flex;
     align-items: center;
@@ -30,4 +31,33 @@
     background: turquoise;
     border-radius: 50%;
     margin: 0 10px 0 0;
+}
+
+/*Поле ввода*/
+
+.item{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item__dialogs{
+    flex: 1 0 auto;
+}
+
+.item__textarea{
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item__textarea textarea{
+    width: 300px;
+    resize: none;
+    border: 1px solid blue;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 20px 0 0;
+
 }
