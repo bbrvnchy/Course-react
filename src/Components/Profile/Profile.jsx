@@ -15,7 +15,7 @@ const Profile =(props)=>{
                 <div className={classes.city}>City: Minsk</div>
                 <div className={classes.education}>Education: GGPK</div>
                 <div className={classes.email}>Web Site:...@mail.ru</div>
-                <MyPosts posts={props.posts}/>
+                <MyPosts posts={props.state.posts} addNewPost={props.addNewPost}/>
             </div>
         </section>
     )

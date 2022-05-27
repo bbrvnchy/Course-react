@@ -22,10 +22,10 @@ const Messages = (props) => {
 const Message = (props) => {
 
     //Метод map для диалогов
-    let dialogsElement = props.dialogs.map((d)=><Dialog name={d.name} id={d.id} />)
+    let dialogsElement = props.state.dialogs.map((d)=><Dialog name={d.name} id={d.id} />)
 
     //Метод map для сообщений
-    let messagesElement = props.messages.map((m)=><Messages message={m.message} />)
+    let messagesElement = props.state.messages.map((m)=><Messages message={m.message} />)
 
     // New massage
 

@@ -14,10 +14,10 @@ const MyPosts =(props)=>{
     //Добавление поста
     let addPost = () => {
         let text = newPostElement.current.value;
-        alert(text)
+        props.addNewPost(text)
+        newPostElement.current.value = '';
     }
-    return(
-        <div>
+    return(       <div>
             <textarea ref={newPostElement} className={classes.textarea} placeholder='New posts'></textarea>
             <button onClick={addPost} className={classes.button} >Add post</button>
             <button className={classes.button}>Remove</button>
