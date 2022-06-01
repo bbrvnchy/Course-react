@@ -24,11 +24,10 @@ const state = {
 
 export let addNewPost = (postMessage) =>{
     let newPost = {
-        id: 3,
         message: postMessage,
         likesCount: 0,
     }
-    state.profilePage.post.push(newPost)
+    state.profilePage.posts.push(newPost)
 
     rerenderEntireTree(state)
 }
